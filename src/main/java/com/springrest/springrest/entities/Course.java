@@ -1,13 +1,19 @@
 package com.springrest.springrest.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jdk.jfr.DataAmount;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity @Getter @Setter @NoArgsConstructor
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@Table(name = "course",schema = "test")
 public class Course {
     @Id
     private long id;

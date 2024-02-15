@@ -44,6 +44,10 @@ public class CourseServiceImpl implements CourseService{
 //            }
 //        }
 //        return null;
+//        Course entity = courseDao.getOne(course.getId());
+//        entity.setId(course.getId());
+//        entity.setTitle(course.getTitle());
+//        entity.setDescription(course.getDescription());
         return courseDao.save(course);
     }
 
